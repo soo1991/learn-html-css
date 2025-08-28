@@ -1,0 +1,26 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 20px;
+}
+
+/* 글꼴 */
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+/* 글자 크기 */
+.wrapper {
+  font-size: 15px;
+}
+
+.wrapper blockquote {
+  font-size: 1.5em;
+}
+
+.like {
+  font-size: 5vw;
+}
