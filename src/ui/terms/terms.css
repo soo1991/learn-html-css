@@ -24,7 +24,6 @@ body {
 
   .thumbnail {
     float: left;
-    margin-right: 16px;
   }
 
   .description {
@@ -44,6 +43,7 @@ body {
   border: 1px solid var(--gray-700);
   border-radius: 10px;
   padding: var(--spacing);
+  width: 250px;
 
   .headline {
     font-size: 1.25rem;
@@ -55,9 +55,7 @@ body {
     margin-top: calc(var(--spacing) - 4px);
   }
 
-  & div:nth-child(3) {
-    background: pink;
-
+  & .term:nth-child(2n + 1) {
     .subject,
     .description {
       float: left;
@@ -65,7 +63,6 @@ body {
 
     .thumbnail {
       float: right;
-      margin-right: 0;
     }
   }
 }
