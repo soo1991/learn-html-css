@@ -32,3 +32,8 @@ body {
     font-size: 1em;
   }
 }
+
+/* 레이아웃 */
+.terms {
+  background: #ffc;
+}
