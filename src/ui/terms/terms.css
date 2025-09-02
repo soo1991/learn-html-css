@@ -1,0 +1,32 @@
+body {
+  margin: 20px;
+}
+
+/* 컴포넌트 */
+.term {
+  --accent-color: #296897;
+
+  background: #ffc;
+  display: flow-root;
+  font-size: 14px;
+
+  .subject {
+    font-weight: 600;
+    color: var(--accent-color);
+  }
+
+  .subject,
+  .description {
+    float: right;
+    width: calc(100% - 76px);
+  }
+
+  .thumbnail {
+    float: left;
+    margin-right: 16px;
+  }
+
+  .description {
+    margin-top: 10px;
+  }
+}
