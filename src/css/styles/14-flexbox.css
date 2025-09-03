@@ -1,0 +1,22 @@
+body {
+  margin: 20px;
+}
+
+/* 플렉스 박스 */
+.like {
+  background: #ffc;
+  box-shadow: 0 0 0 1px red;
+  inline-size: 1000px;
+  block-size: 100px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  flex-flow: row nowrap;
+  justify-content: end;
+  align-items: start;
+
+  > div {
+    inline-size: 200px;
+    background: aqua;
+  }
+}
