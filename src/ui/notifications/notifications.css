@@ -7,4 +7,21 @@ body {
   --green: #22be61;
   --gray: #9b9a90;
   --white: #fff;
+
+  background: #ffc;
+  border: 1px solid var(--gray);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+
+  .notification-icon {
+    box-shadow: 0 0 0 1px red;
+    flex: 0 0 auto;
+  }
+
+  .notification-content {
+    box-shadow: 0 0 0 1px blue;
+    flex: 1 1 0;
+  }
 }
