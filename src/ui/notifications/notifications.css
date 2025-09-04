@@ -59,13 +59,35 @@ body {
 
 /* 레이아웃 */
 .notification-wrapper {
-  border: 1px solid red;
+  --gap: 30px;
+
+  /* border: 1px solid red; */
   display: flex;
-  flex-flow: column nowrap;
-  row-gap: 30px;
+  flex-flow: row wrap;
+  row-gap: var(--gap);
+
+  @media (width > 600px) {
+    column-gap: var(--gap);
+  }
+
+  li {
+    display: contents;
+  }
+
+  .notification {
+    inline-size: 100%;
+
+    @media (width > 600px) {
+      inline-size: calc((100% - var(--gap) * 1) / 2);
+    }
+
+    @media (width > 1000px) {
+      inline-size: calc((100% - var(--gap) * 3) / 4);
+    }
+  }
 }
 
-@media (min-width: 601px) {
+/* @media all and (min-width: 601px) {
   .notification-wrapper {
     --gap: 20px;
 
@@ -73,8 +95,17 @@ body {
     column-gap: var(--gap);
 
     .notification {
-      /* flex-grow: 1; */
       inline-size: calc(50% - (var(--gap) / 2));
     }
   }
 }
+
+@media all and (min-width: 1001px) {
+  .notification-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .notification {
+    inline-size: calc(25% - (var(--gap) / 2));
+  }
+} */
