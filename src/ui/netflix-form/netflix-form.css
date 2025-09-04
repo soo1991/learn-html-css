@@ -50,17 +50,31 @@ body {
   --disable-color: var(--gray-500);
   --text-color: var(--white);
 
-  font-size: 1em;
+  font-size: 12px;
   border: 0;
-  border-radius: 4px;
   padding: 8px 12px;
+
+  @media (width >= 768px) {
+    font-size: 16px;
+  }
+
+  &:focus {
+    outline: 2px solid green;
+  }
 
   &.button-fill {
     background: var(--primary-color);
     color: var(--text-color);
+    border: 1px solid var(--primary-color);
 
     &:disabled {
       background: var(--disable-color);
+      border-color: var(--disable-color);
+    }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):active {
+      background-color: var(--red-600);
     }
   }
 
@@ -72,9 +86,43 @@ body {
     &:disabled {
       color: var(--disable-color);
     }
+
+    &:not([disabled]):hover,
+    &:not([disabled]):active {
+      color: var(--red-600);
+    }
   }
 
   &.button-none {
     background: none;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):active {
+      color: var(--red-600);
+    }
+  }
+
+  &.rounded-xs {
+    border-radius: 4px;
+  }
+
+  &.rounded-md {
+    border-radius: 12px;
+  }
+
+  &.rounded-half {
+    border-radius: 24px;
+  }
+
+  &.icon {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 8px;
+
+    svg {
+      inline-size: 16px;
+      block-size: 10px;
+    }
   }
 }
