@@ -59,9 +59,22 @@ body {
 
 /* 레이아웃 */
 .notification-wrapper {
-  background: #ffc;
+  border: 1px solid red;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 30px;
+}
 
-  .notification {
-    --point-color: red;
+@media (min-width: 601px) {
+  .notification-wrapper {
+    --gap: 20px;
+
+    flex-flow: row wrap;
+    column-gap: var(--gap);
+
+    .notification {
+      /* flex-grow: 1; */
+      inline-size: calc(50% - (var(--gap) / 2));
+    }
   }
 }
