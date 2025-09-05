@@ -46,6 +46,26 @@ body {
   }
 }
 
+/* 입력 서식 */
+.input {
+  background: #ffc;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.5em;
+
+  label {
+    flex: 0 0 auto;
+  }
+
+  input {
+    flex: 1 1 0;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    padding: 0.125em 0.5em;
+  }
+}
+
 /* 버튼 */
 .circle-gradient {
   --size: 24px;
