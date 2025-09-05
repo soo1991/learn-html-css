@@ -200,12 +200,10 @@ body {
 
   select {
     inline-size: 100%;
-    padding: 0.25em 0.5em 0.125em 1.5em;
+    padding: 0.25em 1.5em 0.25em 2em;
     border: 1px solid currentColor;
     border-radius: 4px;
     color: inherit;
-    /* position: relative;
-    background: transparent;
-    z-index: 3; */
+    appearance: none;
   }
 }
