@@ -8,9 +8,6 @@
   --gray-100: #bcc3c7;
   --gray-200: #9b9a90;
   --gray-300: #6d7478;
-
-  --start-color: var(--green-200);
-  --end-color: var(--green-300);
 }
 
 body {
@@ -20,6 +17,8 @@ body {
 /* 텍스트 로고 */
 .text-logo {
   --size: 34.7504px;
+  --start-color: var(--green-200);
+  --end-color: var(--green-300);
 
   display: inline-flex;
   justify-content: center;
@@ -38,5 +37,8 @@ body {
     position: relative;
     top: -0.005em;
     left: -0.005em;
+    background: linear-gradient(to bottom, var(--start-color), var(--end-color));
+    color: transparent;
+    background-clip: text;
   }
 }
