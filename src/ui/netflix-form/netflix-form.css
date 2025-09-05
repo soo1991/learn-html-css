@@ -173,3 +173,8 @@ body {
     display: none;
   }
 }
+
+/* 콤보 박스 */
+.combo-box {
+  background: #ffc;
+}
