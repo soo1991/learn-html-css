@@ -21,3 +21,5 @@ npm install
 ```sh
 git pull origin main
 ```
+
+2025-09-08 다시 설정
